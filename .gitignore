@@ -1,2 +1,5 @@
+*.iml
+/.idea
+/.meteor
 .meteor/local
 .meteor/meteorite
