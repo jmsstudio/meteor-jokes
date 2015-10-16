@@ -1,8 +1,24 @@
 <body>
     <h2>Check out these jokes!</h2>
+
+    <div class="new-joke">
+        {{ >newJoke}}
+    </div>
+
     <div class="jokes">
-        {{ #each jokes}}
-        {{ >joke}}
-        {{ /each}}
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th class="text-center">Joke</th>
+                <th colspan="2">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+                {{ #each jokes}}
+                {{ >joke}}
+                {{ /each}}
+            </tbody>
+        </table>
+
     </div>
 </body>

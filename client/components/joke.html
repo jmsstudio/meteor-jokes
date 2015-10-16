@@ -1,5 +1,11 @@
 <template name="joke">
-    <div class="joke well well-sm" data-id="_id">
-        <label>{{joke}}</label>
-    </div>
+    <tr>
+        <td>{{joke}}</td>
+        <td>
+            <button class="edit" title="Edit"><span class="glyphicon glyphicon-pencil"></span></button>
+        </td>
+        <td>
+            <button class="delete" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>
+        </td>
+    </tr>
 </template>
